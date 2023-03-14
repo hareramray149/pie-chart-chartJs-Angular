@@ -7,16 +7,25 @@ import { ChartDemoComponent } from './chart-demo/chart-demo.component';
 
 import {Chart} from 'chart.js';
 import { registerables } from 'chart.js';
+import { FormAndChartComponent } from './form-and-chart/form-and-chart.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 Chart.register(...registerables);
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChartDemoComponent
+    ChartDemoComponent,
+    FormAndChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
