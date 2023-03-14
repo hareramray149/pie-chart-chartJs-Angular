@@ -2,8 +2,8 @@
 
 <div class="mid">
     <form [formGroup]='pieChartForm' novalidate class="form" (ngSubmit)='createChart()'>
-        <input formControlName='colName' type="text" class="form-control" placeholder="Enter column name" /><br/>
-        <input formControlName='colValue' type="text" class="form-control" placeholder="Enter column value" /> <br/>
+        <input formControlName='colName' type="text" class="form-control" placeholder="Enter chart label" /><br/>
+        <input formControlName='colValue' type="text" class="form-control" placeholder="Enter chart value" /> <br/>
         <button class="mid">Submit</button>
     </form>
 </div>
